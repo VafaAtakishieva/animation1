@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 1530px;
+    height: 734px;
+    background-image: url(../img/mvehfqz6w2ges2dj.jpg);
+    background-position: center;
+   
+    .plane{
+        img{
+            width: 740px;
+            height: 350px;
+            position: absolute;
+            top:250px;
+            left: 375px;
+            z-index: 100;
+            animation: theplane 5s linear infinite;
+        }
+    }
+
+    .birds{
+
+        img{
+            width: 800px;
+            height: 350px;
+            position: absolute;
+            top:270px;
+            right: 0px;
+            z-index: 70;
+            animation: birds 10s linear infinite;
+        }
+
+    }
+
+    .clouds{
+        img{
+        width: 650px;
+        height: 400px;
+        position: absolute;
+        top:300px;
+        right: 0px;
+        animation: clouds 8s linear infinite;
+        z-index: 50;
+        }
+    }
+
+    .cloud{
+        img{
+            width: 700px;
+            height: 500px;
+            position: absolute;
+            top:0px;
+            right: 180px;
+            z-index: 1;
+            animation: cloud 12s linear infinite;
+        }
+    }
+   
+}
+
+
+
+@keyframes theplane{
+
+    0%{
+        top:250px;
+        left: 375px;
+
+    }
+
+    50%{
+
+        transform: translateY(-150px);
+
+    }
+
+    100%{
+        transform: translateY(0px);
+
+    }
+
+}
+
+@keyframes birds{
+    from {right:-100px;}
+    to {right: 102%;}
+}
+
+@keyframes clouds{
+    from{
+
+       right: -100px;
+    }
+    to{
+        right: 80%;
+    }
+}
+@keyframes cloud{
+    from{
+        right: -100px;
+    }
+
+    to{
+        right:80%;
+    }
+}
